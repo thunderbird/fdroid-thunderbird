@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 4rem;
+}
+
+.title {
+    color: white;
+    margin-left: 1rem;
+}
+
+.feature-icon {
+    width: 20rem;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the content */
+    padding: 0 2rem; /* Outer padding */
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 0 1rem;
+    }
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.first-section {
+    padding-top: 2rem;
+}
+
+pre {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 0.5rem;
+    overflow: auto;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-bottom: 1px solid transparent;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+@media (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table img {
+    display: block;
+    max-width: 50px;
+    height: auto;
+    margin: 0 auto;
+}
+
+a {
+    color: #0078D4;
+    text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Adds underline on hover for better UX */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

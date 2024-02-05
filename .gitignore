@@ -1,0 +1,8 @@
+keystore.p12
+
+fdroid/repo/
+fdroid/tmp/
+
+tmp/
+
+.idea/
