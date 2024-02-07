@@ -16,6 +16,8 @@ To add this repository to your F-Droid client, please follow these [instructions
 
 <a href="public/assets/qrcode.png" title="QR code"><img src="public/assets/qrcode.png" alt="QR code" style="width:400px; height:auto;"></a>
 
+[https://thunderbird.github.io/fdroid-thunderbird/repo](https://thunderbird.github.io/fdroid-thunderbird/repo?fingerprint=8B86E5D48983F0875F7EB7A1B2F91B225EE5B997E463E3D63D0E2556E53666BE)
+
 ## Fingerprint
 
 If you would like to manually verify the fingerprint (SHA-256) of the repository signing key, here it is:
