@@ -44,12 +44,17 @@ jobs:
           chmod 0600 fdroid/config.yml
           chmod 0600 fdroid/keystore.p12
 
+      - name: Download releases
+        run: ./download.sh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Run lint
         run: fdroid lint
         working-directory: ./fdroid
         
       - name: Run update
-        run: fdroid update
+        run: fdroid update --create-metadata --pretty --rename-apks
         working-directory: ./fdroid
         
       - name: Setup Pages
