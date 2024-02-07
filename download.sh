@@ -42,3 +42,9 @@ update_metadata () {
 
 # cleanup any previous downloads
 mkdir -p tmp
+
+load_app_versions thunderbird/thunderbird-android true tmp/k9-beta-versions.txt
+
+load_apps thunderbird/thunderbird-android 20 tmp/k9-beta-versions.txt k9-beta
+
+update_metadata thunderbird/thunderbird-android app-k9mail com.fsck.k9
