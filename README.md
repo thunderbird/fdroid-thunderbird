@@ -4,9 +4,9 @@ This [F-Droid](https://f-droid.org/) repository contains Android apps made avail
 
 ## Apps
 
-| Logo                                                                                               | Name            | Description                           | Source code                                                                                                                                                               |
-|----------------------------------------------------------------------------------------------------|-----------------|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <img src="public/assets/logo-k9mail.png" alt="K-9 Mail App Logo" style="width:50px; height:auto;"> | K-9 Mail (beta) | Beta versions of the K-9 Mail client. | Github: [thunderbird-android](https://github.com/thunderbird/thunderbird-android) / [app-k9mail](https://github.com/thunderbird/thunderbird-android/tree/main/app-k9mail) |
+| Logo                                                                                               | Name            | Description                                                                                                        | Source code                                                                                                                                                               |
+|----------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="public/assets/logo-k9mail.png" alt="K-9 Mail App Logo" style="width:50px; height:auto;"> | K-9 Mail (beta) | Beta versions of the K-9 Mail client. <br/> ⚠️ Warning: This version will replace your installed K-9 Mail version. | Github: [thunderbird-android](https://github.com/thunderbird/thunderbird-android) / [app-k9mail](https://github.com/thunderbird/thunderbird-android/tree/main/app-k9mail) |
 
 ## How To
 

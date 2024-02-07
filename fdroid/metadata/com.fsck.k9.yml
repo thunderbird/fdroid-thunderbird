@@ -10,7 +10,9 @@ Donate: https://mzla.link/k9-give
 
 AutoName: K-9 Mail (Beta)
 Name: K-9 Mail (Beta)
-Summary: Beta version of the K-9 Mail client
+Summary: |
+  Beta version of the K-9 Mail client.
+  ⚠️ Warning: This version will replace your installed K-9 Mail version.
 
 RepoType: git
 Repo: https://github.com/thunderbird/thunderbird-android
