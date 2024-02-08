@@ -87,5 +87,5 @@ rm -rf tmp
 mkdir -p tmp
 
 load_app_versions thunderbird/thunderbird-android com.fsck.k9 true
-load_apps thunderbird/thunderbird-android com.fsck.k9 4
+load_apps thunderbird/thunderbird-android com.fsck.k9 20
 update_metadata thunderbird/thunderbird-android app-k9mail com.fsck.k9

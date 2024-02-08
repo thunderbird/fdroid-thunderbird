@@ -102,4 +102,21 @@ patch_publishing_dates () {
   done
 }
 
+# Patch entry.json with new sha256
+# Requires fdroid signindex to be run after this
+patch_entry_json () {
+  local entryJson="fdroid/repo/entry.json"
+  local indexV2Json="fdroid/repo/index-v2.json"
+  local tmpEntryJson="tmp/entry.json"
+
+  local sha256=$(cat "$indexV2Json" | openssl dgst -sha256 | awk '{print $2}')
+
+  jq '.index.sha256 = "'"$sha256"'"' \
+    "$entryJson" \
+    > "$tmpEntryJson"
+  mv $tmpEntryJson $entryJson
+}
+
 patch_publishing_dates com.fsck.k9
+
+patch_entry_json

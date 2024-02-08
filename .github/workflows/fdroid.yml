@@ -58,6 +58,10 @@ jobs:
 
       - name: Patch publishing dates
         run: ./patch_publishing_dates.sh
+
+      - name: Sign repository
+        run: fdroid signindex
+        working-directory: ./fdroid
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
