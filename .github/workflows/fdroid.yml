@@ -22,11 +22,10 @@ jobs:
       - name: Create directory structure
         run: mkdir -p fdroid/repo
         
-      - name: Restore mtime
+      - name: Install tools
         run: |
-          sudo apt install git-restore-mtime 
-          git restore-mtime
-    
+          sudo apt install xmlstarlet 
+
       - name: Install F-Droid server
         run: |
           sudo add-apt-repository ppa:fdroid/fdroidserver
@@ -56,6 +55,9 @@ jobs:
       - name: Run update
         run: fdroid update --create-metadata --pretty --rename-apks
         working-directory: ./fdroid
+
+      - name: Patch publishing dates
+        run: ./patch_publishing_dates.sh
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
