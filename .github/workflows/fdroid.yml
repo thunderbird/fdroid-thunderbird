@@ -21,10 +21,6 @@ jobs:
         
       - name: Create directory structure
         run: mkdir -p fdroid/repo
-        
-      - name: Install tools
-        run: |
-          sudo apt install xmlstarlet 
 
       - name: Install F-Droid server
         run: |
@@ -53,14 +49,7 @@ jobs:
         working-directory: ./fdroid
         
       - name: Run update
-        run: fdroid update --create-metadata --pretty --rename-apks
-        working-directory: ./fdroid
-
-      - name: Patch publishing dates
-        run: ./patch_publishing_dates.sh
-
-      - name: Sign repository
-        run: fdroid signindex
+        run: fdroid update --create-metadata --pretty --rename-apks --use-date-from-apk
         working-directory: ./fdroid
         
       - name: Setup Pages
