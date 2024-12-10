@@ -1,4 +1,4 @@
-# Thunderbird F-Droid repository
+# Thunderbird F-Droid repository - On Hold Needing improved automation
 
 This [F-Droid](https://f-droid.org/) repository contains Android apps made available by Thunderbird.
 
